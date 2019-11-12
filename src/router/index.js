@@ -73,7 +73,7 @@ const download = r => require.ensure([], () => r(require('../components/page/dow
 const message = r => require.ensure([], () => r(require('../components/page/message/message')), 'message')
 const product = r => require.ensure([], () => r(require('../components/page/product/product')), 'product')
 const solution = r => require.ensure([], () => r(require('../components/page/solution/solution')), 'solution')
-const about = r => require([], () => r(require('../components/page/about/about')), 'about')
+const about = r => require.ensure([], () => r(require('../components/page/about/about')), 'about')
 Vue.use(Router)
 
 export default new Router({
